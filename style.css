@@ -3,10 +3,11 @@ p{
     background: green;
     width: 200px;
     transition: 0.5s;
-
+    transform: translateX(0);
 
 }
 p:hover{
     background: red;
     color: white;
+    transform: translateX(200px);
 }
