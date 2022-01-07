@@ -11,3 +11,6 @@ p:hover{
     color: white;
     transform: translateX(200px);
 }
+img{
+    max-width: 100%;
+}
