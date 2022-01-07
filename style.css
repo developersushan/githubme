@@ -12,5 +12,5 @@ p:hover{
     transform: translateX(200px);
 }
 img{
-    max-width: 100%;
+    width: 100px;
 }
