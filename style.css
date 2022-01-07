@@ -1,0 +1,11 @@
+p{
+    color: red;
+    background: green;
+    width: 200px;
+    transition: 0.5s;
+    
+
+}
+p:hover{
+    background: red;
+}
