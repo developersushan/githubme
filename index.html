@@ -11,7 +11,7 @@
 <div class="header-section">
 <div class="contact-form">
     <h3 class="header-text">contact form 7</h3>
-    <form action="#">
+    <form action="#" onsubmit="sendEmail(); reset(); return false;">
         <label class="text-mian" for="">first name:</label>
         <input class="main-type" type="text" placeholder="First Name">
         <label class="text-mian" for="">last name:</label>
@@ -24,5 +24,22 @@
     </form>
 </div>
 </div>
+<script src="app.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "sushansing709sushansing@gmail.com",
+    Password : "password",
+    To : 'developersushan.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert("congratulations")
+);
+}
+</script>
 </body>
 </html>
